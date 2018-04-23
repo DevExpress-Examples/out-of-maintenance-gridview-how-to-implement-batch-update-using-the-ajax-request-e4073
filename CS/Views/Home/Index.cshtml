@@ -1,0 +1,19 @@
+﻿@{
+	ViewBag.Title = "How to perform GridView batch updating using different editors in the DataItem template ";
+}
+<h2>@ViewBag.Message</h2>
+<script language="javascript" type="text/javascript">
+
+</script>
+<div style="width: 400px">
+@Html.Action("GridViewPartial")
+<input type="hidden" name="changedValues" id="changedValues"/>
+@Html.DevExpress().Button(s => {
+	s.Name = "customButton";
+	s.UseSubmitBehavior = false;
+	s.ClientSideEvents.Click = String.Format("function (s, e) {{ OnClick('{0}'); }}", Url.Action("UpdateValue", "Home", null));
+}).GetHtml()
+	<div class="status">
+		AJAX status
+	</div>
+</div>
