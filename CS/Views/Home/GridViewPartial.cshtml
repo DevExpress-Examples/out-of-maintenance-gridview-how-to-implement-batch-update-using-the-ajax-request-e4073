@@ -1,0 +1,41 @@
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "grid";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+
+    settings.KeyFieldName = "Id";
+    settings.Width = 400;
+
+    settings.Columns.Add(column => {
+        column.FieldName = "Id";
+    });
+
+    settings.Columns.Add(column => {
+        column.FieldName = "Text";
+        column.SetDataItemTemplateContent(c => {
+            Html.DevExpress().TextBox(txtSettings => {
+                txtSettings.Name = "txt" + c.KeyValue;
+                txtSettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+                txtSettings.Properties.ClientSideEvents.ValueChanged = String.Format("function (s, e) {{ OnValueChanged(s, '{0}', {1}); }}",
+                    c.Column.FieldName, c.KeyValue);
+            }).Bind(DataBinder.Eval(c.DataItem, c.Column.FieldName)).Render();
+        });
+    });
+
+    settings.Columns.Add(column => {
+        column.FieldName = "Item";
+        column.SetDataItemTemplateContent(c => {
+            Html.DevExpress().ComboBox(cmbSettings => {
+                cmbSettings.Name = "cmb" + c.KeyValue;
+                cmbSettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+                cmbSettings.Properties.ValueType = typeof(Int32);
+                cmbSettings.Properties.Items.Add("Yes", 1);
+                cmbSettings.Properties.Items.Add("No", 2);
+
+                 cmbSettings.Properties.ClientSideEvents.ValueChanged = String.Format("function (s, e) {{ OnValueChanged(s, '{0}', {1}); }}",
+                    c.Column.FieldName, c.KeyValue);
+            }).Bind(DataBinder.Eval(c.DataItem, c.Column.FieldName)).Render();
+        });
+    });
+}).Bind(Model).GetHtml()
