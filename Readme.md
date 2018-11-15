@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
+* [ChangedDataItems.cs](./CS/Models/ChangedDataItems.cs) (VB: [ChangedDataItems.vb](./VB/Models/ChangedDataItems.vb))
+* [MyItem.cs](./CS/Models/MyItem.cs) (VB: [MyItem.vb](./VB/Models/MyItem.vb))
+* [Script.js](./CS/Scripts/Script.js) (VB: [Script.js](./VB/Scripts/Script.js))
+* [GridViewPartial.cshtml](./CS/Views/Home/GridViewPartial.cshtml)
+* **[Index.cshtml](./CS/Views/Home/Index.cshtml)**
+<!-- default file list end -->
 # GridView - How to implement batch update using the Ajax request
 
 
