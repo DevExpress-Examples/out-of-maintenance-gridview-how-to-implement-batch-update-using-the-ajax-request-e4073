@@ -9,6 +9,9 @@
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # GridView - How to implement batch update using the Ajax request
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4073)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to implement batch update using the Ajax request.</p><p>Client-side data preparation is based on the approach described in the <a href="http://www.nickriggs.com/posts/post-complex-javascript-objects-to-asp-net-mvc-controllers/"><u>Post Complex JavaScript Objects to ASP.NET MVC Controllers</u></a> article.</p><p><strong>See also:<br />
