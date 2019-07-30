@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # GridView - How to implement batch update using the Ajax request
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4073)**
+**[[Run Online]](https://codecentral.devexpress.com/e4073/)**
 <!-- run online end -->
 
 
