@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128550165/14.1.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4073)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
 
@@ -14,9 +9,6 @@
 * **[Index.cshtml](./CS/Views/Home/Index.cshtml)**
 <!-- default file list end -->
 # GridView - How to implement batch update using the Ajax request
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4073/)**
-<!-- run online end -->
 
 
 <p>This example demonstrates how to implement batch update using the Ajax request.</p><p>Client-side data preparation is based on the approach described in the <a href="http://www.nickriggs.com/posts/post-complex-javascript-objects-to-asp-net-mvc-controllers/"><u>Post Complex JavaScript Objects to ASP.NET MVC Controllers</u></a> article.</p><p><strong>See also:<br />
